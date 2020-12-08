@@ -1,0 +1,40 @@
+body{
+    margin: 3rem;
+    padding: auto;
+    background-size: cover;
+    font-family: "Comfotaa", sans-serif;
+}
+.cabecalho{
+    margin: 0;
+    padding-top: 0em;
+    padding-left: 0em;
+    padding-bottom: 20px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 25px;
+}
+table {
+    width: 40% !important;
+    margin: auto;
+    -moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+
+	-moz-box-shadow: 0 1px 2px #d1d1d1;
+	-webkit-box-shadow: 0 1px 2px #d1d1d1;
+	box-shadow: 0 1px 2px #d1d1d1;
+}
+tr{
+    text-align: center;
+	padding-left:20px;
+}
+td{
+    padding:10px;
+}
+input{
+    margin-left: 1px;
+}
+p{
+    text-align: center;
+}
