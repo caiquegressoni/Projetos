@@ -22,7 +22,11 @@ const routes: Routes = [
     {
     path: 'promocao',
     loadChildren: () => import('./pages/promocao/promocao.module').then( m => m.PromocaoPageModule)
+  },  {
+    path: 'carrinho',
+    loadChildren: () => import('./pages/carrinho/carrinho.module').then( m => m.CarrinhoPageModule)
   },
+
 ];
 @NgModule({
   imports: [

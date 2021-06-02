@@ -25,3 +25,19 @@
 #container a {
   text-decoration: none;
 }
+ion-badge{
+  margin-right: 20px;
+  position: absolute;
+  right: 0;
+  top: 10px;
+}
+ion-icon[name="cart-outline"]{
+  color:#3CB371;
+}
+ion-buttons[slot="end"]>ion-button.cart{
+  margin-right: 20px;
+}
+ion-toolbar{
+  color: #3CB371;
+  background-color: #FFA500;
+}

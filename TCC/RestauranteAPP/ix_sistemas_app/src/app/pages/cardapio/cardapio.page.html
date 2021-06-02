@@ -1,6 +1,6 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>cardapio</ion-title>
+    <ion-title>Cardapio</ion-title>
     <ion-buttons slot="start">
       <ion-menu-button menu="main-menu"></ion-menu-button>
     </ion-buttons>
@@ -8,15 +8,26 @@
 </ion-header>
 
 <ion-content>
-  <ion-card>
+  <ion-list>
+  <ion-card *ngFor="let p of produto">
     <ion-card-header>
-      <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-      <ion-card-title>Card Title</ion-card-title>
+      <ion-card-title>{{p.nome}}</ion-card-title>
     </ion-card-header>
   
     <ion-card-content>
-      Keep close to Nature's heart... and break clear away, once in awhile,
-      and climb a mountain or spend a week in the woods. Wash your spirit clean.
+      <ion-row class="ion-align-items-center">
+        <ion-col size="8">
+          <ion-label color="secondary">
+            <b>{{ p.valor}}</b>
+          </ion-label>
+          <ion-col size="4" class="ion-text-right">
+            <ion-button fill="clear" (click)="addToCart(p)">
+              <ion-icon name="add"></ion-icon>
+            </ion-button>
+          </ion-col>
+        </ion-col>
+      </ion-row>
     </ion-card-content>
   </ion-card>
+</ion-list>
 </ion-content>
